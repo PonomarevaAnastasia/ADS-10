@@ -21,7 +21,6 @@ class Tree {
         symb = '*';
         createNode(vec);
     }
-  
     int getSize() const {
         return root.size();
     }
