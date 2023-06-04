@@ -17,7 +17,7 @@ class Tree {
         }
     }
  
- public:
+  public:
     explicit Tree(const std::vector<char>& vec) {
         symb = '*';
         createNode(vec);
