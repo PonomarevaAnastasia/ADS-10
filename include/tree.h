@@ -16,6 +16,7 @@ class Tree {
             root[i]->createNode(work);
         }
     }
+ 
  public:
     explicit Tree(const std::vector<char>& vec) {
         symb = '*';
