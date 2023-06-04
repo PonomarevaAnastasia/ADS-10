@@ -7,10 +7,10 @@ class Tree {
     explicit Tree(char ch) : sum(ch) {}
     void createNode(const std::vector<char>& vec) {
         for (int i = 0; i < vec.size(); i++) {
-            std::vector<char> word = vec;
-            root.push_back(new Tree(word[i]));
-            word.erase(word.begin() + i);
-            root[i]->createNode(word);
+            std::vector<char> work = vec;
+            root.push_back(new Tree(work[i]));
+            work.erase(work.begin() + i);
+            root[i]->createNode(work);
         }
     }
  public:
